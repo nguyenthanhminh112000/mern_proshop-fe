@@ -6,13 +6,18 @@ import {
   HeaderSearchButton,
   HeaderQuickLink,
 } from './styles';
+import { useTranslations } from '../../utils/intlTools';
 
 const Header = () => {
+  const [header_search_placeholder, header_search_button] = useTranslations([
+    'header_search_placeholder',
+    'header_search_button',
+  ]);
   return (
     <HeaderContainer>
       <HeaderLogo>PROSHOP</HeaderLogo>
-      <HeaderSearchInput></HeaderSearchInput>
-      <HeaderSearchButton></HeaderSearchButton>
+      <HeaderSearchInput placeholder={header_search_placeholder} />
+      <HeaderSearchButton>{header_search_button}</HeaderSearchButton>
     </HeaderContainer>
   );
 };

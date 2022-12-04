@@ -18,3 +18,6 @@ export const store = configureStore({
   devTools: true,
   middleware,
 });
+
+/////types
+export type RootState = ReturnType<typeof store.getState>;

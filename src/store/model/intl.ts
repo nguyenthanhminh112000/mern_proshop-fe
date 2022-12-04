@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import en from '../../locale/en';
 import vi from '../../locale/vi';
 import { LANG_KEY } from '../../constants/locale';
-import { RootState } from '../index.type';
+import { RootState } from '~/store/index';
 
 const defaultLanguageKey = LANG_KEY.EN;
 
